@@ -1,0 +1,97 @@
+@import './base.scss';
+
+body.loading {
+  overflow: hidden;
+}
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 99;
+  background: #191919;
+  display: grid;
+  place-items: center;
+  //uncomment for loading page animation
+  display: none;
+
+
+  &__box {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    border: 3px solid #000000;
+    border-top: 3px solid $secondary-color;
+    border-bottom: 3px solid $secondary-color;
+    @media (max-width:600px) {
+      &{
+        width: 90vw;
+      }
+    }
+  }
+
+  &__text {
+    position: relative;
+    color: white;
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width:355px) {
+      &{
+        font-size: 15px;
+      }
+    }
+  }
+
+  &__bar {
+    width: 90%;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 2px;
+
+    &--inner {
+      height: 100%;
+      width: 0;
+      border-radius: 2px;
+      background: $secondary-color;
+    }
+  }
+  &__counter {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    &--number{
+      color: $secondary-color;
+    }
+  }
+  &__img{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    opacity: 0;
+  }
+}
+
+// .landing canvas {
+//   position: absolute;
+// }

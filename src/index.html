@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/styles/base.scss">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+  <script type="module" src="assets/js/config.js"></script>
+</head>
+<body>
+  <!--Loading-->
+  <div class="loading">
+    <div class="loading__box">
+      <img src="assets/images/press-photo.jpg" alt="" class="loading__img">
+      <div class="loading__text">Loading</div>
+      <div class="loading__bar">
+        <div class="loading__bar--inner"></div>
+        <div class="loading__counter">
+          <span>0%</span>
+          <div class="loading__counter--number">100%</div>
+        </div>
+    </div>
+    </div>
+  </div>
+  <!--Landing-->
+  <div class="landing">
+    <!--Three js background-->
+    <div class="three_bg"></div>
+    <!--Header-->
+    <header class="header">
+      <div class="header__wrap">
+        <ul class="header__left">
+          <li class="stroke">
+            <a class="link-hover" data-text="work" href="#work"><span>Work</span></a>
+          </li>
+          <li class="stroke">
+            <a class="link-hover" data-text="The Fargions" href="#"><span>The Fargions</span></a>
+          </li>
+          <li class="stroke">
+            <a class="link-hover" data-text="Mastering" href="#"><span>Mastering</span></a>
+          </li>
+          <li class="stroke">
+            <a class="link-hover" data-text="About" href="#"><span>About</span></a>
+          </li>
+        </ul>
+        <div class="header__right">
+          <button class="contact-button"><span>Contact</span></button>
+        </div>
+
+        <!--Mobile Nav-->
+      </div>
+      <nav class="hamburger-nav">
+        <div class="hamburger-menu">
+          <div class="hamburger-icon">
+            <button class="btn-toggle">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="menu-links">
+              <li><a href="#">Work</a></li>
+              <li><a href="#">The Fargions</a></li>
+              <li><a href="#">Mastering</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Socials-->
+    <div class="socials">
+    <a href="" target="_blank">
+      <i class="fa-brands fa-instagram colouredIcon"></i>
+    </a>
+    <a href="" target="_blank">
+      <i class="fa-brands fa-twitter colouredIcon "></i>
+    </a>
+    <a href="" target="_blank">
+      <i class="fa-brands fa-github colouredIcon"></i>
+    </a>
+    <a href="" target="_blank">
+      <i class="fa-brands fa-bandcamp colouredIcon"></i>
+    </a>
+    <a href="" target="_blank">
+      <i class="fa-brands fa-youtube colouredIcon"></i>
+    </a>
+  </div>
+  <!--Scroll down-->
+  <div class="scrolldown">
+    <div class="scrolldown__wheel">
+      <div class="scrolldown--inner"></div>
+    </div>
+    <div class="scrolldown__arrows">
+      <span class="scrolldown__arrow"></span>
+      <span class="scrolldown__arrow"></span>
+      <span class="scrolldown__arrow"></span>
+    </div>
+  </div>
+</div>
+<!--Projects-->
+<section class="section-project" id="work">
+  <div class="projects-container">
+  <h1 class="projects__header">Work</h1>
+</div>
+</section>
+
+<!--The Fargions-->
+<section class="fargions">
+  <div class="fargion-wrapper">
+  <h1 class="fargion-wrapper__h1">The Fargions</h1>
+  <div class="swiper mySwiper">
+    <div class="parallax-bg" data-swiper-parallax="-23%"></div>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="title" data-swiper-parallax="-300">B Minor</div>
+        <div class="subtitle" data-swiper-parallax="-200">2024</div>
+        <img class="fargion-project-img" src="assets/images/thefargions.jpeg" alt="">
+        <div class="text" data-swiper-parallax="-100">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+            tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+          </p>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="title" data-swiper-parallax="-300">B Minor</div>
+        <div class="subtitle" data-swiper-parallax="-200">2024</div>
+        <img class="fargion-project-img" src="assets/images/thefargions.jpeg" alt="">
+        <div class="text" data-swiper-parallax="-100">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+            tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="swiper__tools">
+    <div class="swiper__buttons">
+      <button class="swiper-button-prev">
+        <img src="assets/images/rightArrow.png" alt="">
+      </button>
+      <button class="swiper-button-next">
+        <img src="assets/images/rightArrow.png" alt="">
+      </button>
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+</section>
+
+<section class="contact">
+  <div class="contact-container">
+    <div class="contact-text">
+      <p>
+        <span>Got a project in mind?</span>
+      </p>
+      <h2>Let's Connect</h2>
+      <button>
+        <a href="mailto:giacomo.fargion@yahoo.com">Write a message</a>
+      </button>
+    </div>
+  </div>
+</section>
+
+<script type="module" src="assets/js/app.js"></script>
+<script type="module" src="assets/js/threeBg.js"></script>
+</body>
+</html>

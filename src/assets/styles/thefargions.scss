@@ -1,0 +1,73 @@
+@import "./base.scss";
+
+.fargion-wrapper {
+  padding: 20px;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  justify-content: center;
+  &__h1 {
+    // font-size: 60px;
+    font-size: italic;
+    padding: 50px;
+  }
+}
+
+
+.swiper-slide {
+  border: 5px solid red;
+  .title {
+    padding: 10px;
+    font-size: 30px;
+    font-style: italic;
+  }
+  .subtitle {
+    padding: 10px;
+  }
+  .text {
+    font-size: 15px;
+    padding: 5px;
+    margin-right: 20px ;
+  }
+  .fargion-project-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    width: 60%;
+    max-width: 600px;
+  }
+}
+.swiper-pagination {
+  position: relative;
+}
+
+.swiper__tools {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding: 0 4rem 0 2rem;
+}
+.swiper__buttons {
+  display: flex;
+  button {
+    position: relative;
+    background: transparent;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    border: 1px solid black;
+    margin-right: 2rem;
+    user-select: none;
+    &:after {
+      display: none;
+    }
+    &:first-of-type {
+      transform: rotate(180deg);
+    }
+    &:hover {
+      background: $secondary-color;
+    }
+  }
+}
