@@ -97,14 +97,6 @@
 }
 
 @media (max-width: 740px) {
-  // .projects-container {
-  //   padding: 1rem;
-  // }
-  // .project__img img {
-  //   width: 85vw;
-  //   display: block; /* Ensures the image takes the full width */
-  //   margin: 0 auto; /* Centers the image horizontally */
-  // }
   .project__description {
     text-align: center; /* Centers the text */
   }
@@ -114,7 +106,4 @@
     margin-left: auto; /* Centers the paragraph horizontally */
     margin-right: auto; /* Centers the paragraph horizontally */
   }
-  // .project__description p:first-of-type {
-  //   margin-top: 400px; /* Adjust the margin for the first paragraph */
-  // }
 }
