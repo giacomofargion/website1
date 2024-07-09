@@ -1,9 +1,10 @@
 import gsap from "gsap"
 import Swiper from "swiper";
 import { Navigation, Pagination } from 'swiper/modules';
-import { projects } from "./data";
+import { projects, fargions } from "./data";
 import imagesLoaded from 'imagesloaded';
 
+//loading
 document.body.classList.add('loading');
 const bar = document.querySelector('.loading__bar--inner');
 const counterNum = document.querySelector(".loading__counter--number");
@@ -40,7 +41,6 @@ let barInterval = setInterval(() => {
       border: "none"
     });
     imagesLoaded(document.querySelectorAll('img'), () => {
-      // console.log('images loaded');
       gsap.to('.loading', {
         delay: 2,
         duration: 2,
@@ -91,8 +91,8 @@ projects.map((project) => {
     <div class="project__img">
       <img src="${project.image}.jpg" alt="">
       <div class="project__links">
-        <a href="#" target="_blank">
-          <a href="#" class="coolCircleEyeButton">
+        <a href="${project.link}" target="_blank">
+          <a href="${project.link}" target="_blank"class="coolCircleEyeButton">
             <svg class="textcircle" viewBox="0 0 500 500">
               <defs>
                 <path
@@ -103,10 +103,10 @@ projects.map((project) => {
               <text>
                 <textPath
                   xlink:href="#textcircle"
-                  aria-label=".Click to see the live version."
+                  aria-label=".Listen here."
                   textLength="900"
                 >
-                  .Click to see the live version.
+                  .Listen here.
                 </textPath>
               </text>
             </svg>
@@ -144,6 +144,8 @@ projects.map((project) => {
   `
   project_container.innerHTML += template;
 });
+
+//Fargion Mapping
 
 //Fargion swiper
 Swiper.use([Pagination, Navigation]);

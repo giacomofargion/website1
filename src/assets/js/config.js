@@ -5,3 +5,4 @@ import '../styles/projects.scss';
 import '../styles/thefargions.scss';
 import '../styles/swiper.scss';
 import '../styles/contact.scss';
+import '../styles/mastering.scss';
