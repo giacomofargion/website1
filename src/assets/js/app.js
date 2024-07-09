@@ -1,6 +1,8 @@
 import gsap from "gsap"
-import Swiper from "swiper";
-import { Navigation, Pagination } from 'swiper/modules';
+// import Swiper from "swiper";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+// import { Navigation, Pagination } from 'swiper/modules';
 import { projects, fargions } from "./data";
 import imagesLoaded from 'imagesloaded';
 
@@ -146,19 +148,32 @@ projects.map((project) => {
 });
 
 //Fargion Mapping
+gsap.registerPlugin(ScrollTrigger);
 
-//Fargion swiper
-Swiper.use([Pagination, Navigation]);
+const horizontalSections = gsap.utils.toArray('section.horizontal')
 
-var swiper = new Swiper(".mySwiper", {
-  speed: 600,
-  parallax: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+horizontalSections.forEach(function (sec, i) {
+
+  const thisPinWrap = sec.querySelector('.pin-wrap');
+  const thisAnimWrap = thisPinWrap.querySelector('.animation-wrap');
+
+  const getToValue = () => -(thisAnimWrap.scrollWidth - window.innerWidth);
+
+  gsap.fromTo(thisAnimWrap, {
+    x: () => thisAnimWrap.classList.contains('to-right') ? 0 : getToValue()
+  }, {
+    x: () => thisAnimWrap.classList.contains('to-right') ? getToValue() : 0,
+    ease: "none",
+    scrollTrigger: {
+      trigger: sec,
+      start: "top top",
+      end: () => "+=" + (thisAnimWrap.scrollWidth - window.innerWidth),
+      pin: thisPinWrap,
+      invalidateOnRefresh: true,
+      //anticipatePin: 1,
+      scrub: true,
+      // markers: true,
+    }
+  });
+
 });

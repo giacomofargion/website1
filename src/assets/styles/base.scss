@@ -47,6 +47,7 @@ img,video,canvas,svg {
 a {
   text-decoration: none;
   color: inherit;
+  z-index: 2;
 }
 ul {
   list-style: none;
