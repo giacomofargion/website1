@@ -92,8 +92,16 @@ let barInterval = setInterval(() => {
 //Menu toggle
 const button = document.querySelector(".btn-toggle");
 const menu = document.querySelector('.menu-links');
+const links = document.querySelectorAll('.menu-links a');
+
 button.addEventListener('click', () => {
   menu.classList.toggle('active');
+});
+
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('active');
+  });
 });
 
 //Project mapping
