@@ -12,6 +12,8 @@
   background: #191919;
   display: grid;
   place-items: center;
+
+
   //uncomment for loading page animation
   // display: none;
 
@@ -79,13 +81,27 @@
       color: $secondary-color;
     }
   }
-  &__img{
+  // &__img{
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   // width: 80%;
+  //   opacity: 0;
+  // }
+  &__message {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
     opacity: 0;
+    color: white;
+    font-size: 200px;
+    font-weight: 700;
+    @media (max-width: 425px) {
+      top: 90%;
+      font-size: 100px;
+    }
   }
 }
 
