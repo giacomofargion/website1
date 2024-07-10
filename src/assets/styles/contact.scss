@@ -4,6 +4,7 @@
 .contact {
   padding: 50px;
 }
+
 .contact-container {
   border: 2px solid black;
   display: flex;
@@ -11,6 +12,7 @@
   justify-content: center;
   height: 90vh;
   border-radius: 50px;
+  width: 100%;
 }
 
 .contact-text {
@@ -18,9 +20,13 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  padding: 5px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
+
 .contact-text span {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .contact-text h2 {
@@ -31,4 +37,50 @@
   background: transparent;
   border-radius: 50px;
   padding: 20px;
+}
+
+/* Media query for devices with width up to 1024px */
+@media (max-width: 1024px) {
+  .contact-container {
+    width: 90vw;
+  }
+}
+
+/* Media query for devices with width up to 900px */
+@media (max-width: 900px) {
+  .contact-text span {
+    font-size: 15px;
+  }
+
+  .contact-text h2 {
+    font-size: 25px;
+  }
+}
+
+/* Media query for devices with width up to 600px */
+@media (max-width: 600px) {
+  .contact {
+    padding: 20px;
+  }
+
+  .contact-container {
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .contact-text {
+    padding: 10px;
+  }
+
+  .contact-text span {
+    font-size: 14px;
+  }
+
+  .contact-text h2 {
+    font-size: 20px;
+  }
+
+  .contact-text button {
+    padding: 10px;
+  }
 }
