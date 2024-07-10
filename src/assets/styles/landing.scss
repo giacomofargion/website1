@@ -228,13 +228,16 @@
 .socials {
   position: absolute;
   left: 50%;
+  top: 300px;
   transform: translateX(-50%);
   bottom: -100%;
   display: flex;
   align-items: center;
   gap: 1rem;
   z-index: 2;
-
+  i {
+    font-size: 30px;
+  }
 }
 
 
@@ -245,30 +248,31 @@
   left: 50%;
   transform: translateX(-50%);
   width: 50px;
-  // height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 }
 
 .scrolldown__wheel {
   height: 42px;
   width: 24px;
   border-radius: 10px;
-  border: 2px solid black;
+  border: 2px solid rgb(255, 255, 255);
   position: relative;
 }
 
 .scrolldown--inner {
   position: absolute;
-  left: 10px;
+  left: 8px;
   margin-top: 5px;
   width: 4px;
   height: 4px;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   animation: movingwheel 0.5s linear infinite;
+
 }
 
 @keyframes movingwheel {
@@ -299,8 +303,8 @@
 .scrolldown__arrow {
   width: 15px;
   height: 15px;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
+  border-right: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(166, 166, 166);
   transform: rotate(45deg);
   animation: scrollAnime 1s infinite;
 }
@@ -327,3 +331,7 @@
     transform: translateY(20px) rotate(45deg);
   }
 }
+
+// .landing canvas {
+//   position: absolute;
+// }
