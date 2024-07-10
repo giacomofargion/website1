@@ -25,19 +25,37 @@ let barInterval = setInterval(() => {
     });
     gsap.to('.loading__text,.loading__counter', {
       duration: 1,
-      opacity: "0"
+      opacity: 0
     });
-    gsap.to('.loading__box', {
-      duration: 2,
-      height: "500px",
-      borderRadius: "50%",
-    });
-    gsap.to('.loading__img', {
-      duration: 6,
-      opacity: 1,
-      borderRadius: "50%",
-      scale: 0
-    });
+    // gsap.to('.loading__box', {
+    //   // duration: 8,
+    //   // height: "500px",
+    //   // width: "100vw",
+    //   // borderRadius: "50%",
+    // });
+    // gsap.to('.loading__message', {
+    //   duration: 12,
+    //   opacity: 1,
+    //   top: "1000%",
+    //   // ease: "power1.inOut",
+    // });
+    gsap.timeline()
+        .to('.loading__message', {
+            duration: 1.5,
+            opacity: 1,
+            top: "60%",
+            ease: "power1.inOut"
+        })
+        .to('.loading__message', {
+            duration: 8,
+            left: "1000%",
+            ease: "power1.inOut"
+        })
+        .to('.loading__message', {
+            duration: 1.5,
+            opacity: 0,
+            ease: "power1.inOut"
+        });
     gsap.to('.loading__box', {
       delay: 2,
       border: "none"
@@ -68,7 +86,7 @@ let barInterval = setInterval(() => {
       document.body.classList.remove('loading');
     })
   }
-}, 50);
+}, 20);
 
 
 //Menu toggle
@@ -176,4 +194,16 @@ horizontalSections.forEach(function (sec, i) {
     }
   });
 
+});
+
+gsap.to(".fargions", {
+  duration: 8,
+  backgroundColor: "#f0f1f2",
+  ease: "elastic",
+  scrollTrigger: {
+    trigger: ".fargions",
+    start: "top center",
+    end: "bottom center",
+    toggleActions: "play none none reverse"
+  }
 });

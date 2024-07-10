@@ -54,6 +54,7 @@
 .hamburger-menu {
   padding: 10px;
   position: absolute;
+  top: 10px;
   left: 50px;
   flex-direction: column;
   justify-content: space-between;
@@ -61,6 +62,7 @@
   width: 30px;
   cursor: pointer;
   font-weight: 500;
+
 }
 
 .btn-toggle {
@@ -72,9 +74,10 @@
 .menu-links {
   display: none;
   position: absolute;
+  right: 25px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 0.5s ease-in-out;
 }
 .menu-links a {
   display: block;
