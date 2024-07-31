@@ -106,11 +106,12 @@ links.forEach(link => {
 
 //Project mapping
 const project_container = document.querySelector('.projects-container');
-projects.map((project) => {
+projects.map((project, index) => {
+  let num = index + 1;
   let template = `
     <div class="project">
     <div class="project__header">
-      <span>1/8</span>
+      <span>${num}/5</span>
       <span>${project.date}</span>
     </div>
     <div class="project__infos">
@@ -173,7 +174,7 @@ projects.map((project) => {
   project_container.innerHTML += template;
 });
 
-//Fargion Mapping
+//Fargion Scrolling
 gsap.registerPlugin(ScrollTrigger);
 
 const horizontalSections = gsap.utils.toArray('section.horizontal')
@@ -204,12 +205,26 @@ horizontalSections.forEach(function (sec, i) {
 
 });
 
+
+//Bg color fades
 gsap.to(".fargions", {
   duration: 8,
   backgroundColor: "#f0f1f2",
   ease: "elastic",
   scrollTrigger: {
     trigger: ".fargions",
+    start: "top center",
+    end: "bottom center",
+    toggleActions: "play none none reverse"
+  }
+});
+
+gsap.to(".contact", {
+  duration: 15,
+  backgroundColor: "#000000",
+  ease: "elastic",
+  scrollTrigger: {
+    trigger: ".contact",
     start: "top center",
     end: "bottom center",
     toggleActions: "play none none reverse"

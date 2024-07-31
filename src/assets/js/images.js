@@ -5,8 +5,9 @@ import andThenEverythingWasSung from "../images/And-then-everything-was-sung.png
 import unreasonable from "../images/Unreasonable.png";
 
 //Fargions
-import aurevoir from "../images/Aurevoir.jpg";
-import twtr from "../images/Together-with-the-rest.jpg";
+// import bminor from "../images/B-minor.png";
+// import aurevoir from "../images/Aurevoir.jpg";
+// import twtr from "../images/Together-with-the-rest.jpg";
 
 import bg1 from "../images/bg1.jpg";
 
@@ -19,8 +20,9 @@ const images = {
   andThenEverythingWasSung,
   unreasonable,
   //Fargion images
-  aurevoir,
-  twtr,
+  // aurevoir,
+  // twtr,
+  // bminor,
   //Background img
   bg1
 }

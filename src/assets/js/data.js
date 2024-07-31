@@ -38,19 +38,25 @@ let projects = [
   },
 ];
 
-let fargions = [
-  {
-    name: "Together With The Rest",
-    date: "2023",
-    image: images.twtr,
-    text: "Performed at Iklektik and Morocco Bound Bookshop. Video by Carl Ashenden.",
-    },
-  {
-   name: "Au Revoir",
-   date: "2022",
-   image: images.aurevoir,
-   text: "'This one's called Au Revoir'. Mixed and Mastererd by Giacomo Fargion. Album cover by Sophie Wolfson @swolf_illustration.",
-  }
-];
+// let fargions = [
+//   {
+//     name: "B minor",
+//     date: "2024",
+//     image: images.bminor,
+//     text: "Performed at Music We'd Like to Hear. Video by Carl Ashenden."
+//   },
+//   {
+//     name: "Together With The Rest",
+//     date: "2023",
+//     image: images.twtr,
+//     text: "Performed at Iklektik and Morocco Bound Bookshop. Video by Carl Ashenden.",
+//     },
+//   {
+//    name: "Au Revoir",
+//    date: "2022",
+//    image: images.aurevoir,
+//    text: "'This one's called Au Revoir'. Mixed and Mastererd by Giacomo Fargion. Album cover by Sophie Wolfson @swolf_illustration.",
+//   }
+// ];
 
-export { projects, fargions };
+export { projects };
