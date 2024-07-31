@@ -27,18 +27,6 @@ let barInterval = setInterval(() => {
       duration: 1,
       opacity: 0
     });
-    // gsap.to('.loading__box', {
-    //   // duration: 8,
-    //   // height: "500px",
-    //   // width: "100vw",
-    //   // borderRadius: "50%",
-    // });
-    // gsap.to('.loading__message', {
-    //   duration: 12,
-    //   opacity: 1,
-    //   top: "1000%",
-    //   // ease: "power1.inOut",
-    // });
     gsap.timeline()
         .to('.loading__message', {
             duration: 1.5,
@@ -61,6 +49,7 @@ let barInterval = setInterval(() => {
       border: "none"
     });
     imagesLoaded(document.querySelectorAll('img'), () => {
+      console.log('img loaded');
       gsap.to('.loading', {
         delay: 2,
         duration: 2,

@@ -6,6 +6,8 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 const container = document.querySelector('.three_bg');
 const loader = new THREE.TextureLoader();
 
+
+
 const renderer = new THREE.WebGLRenderer({
   antialias: true,
 });
