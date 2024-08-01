@@ -2,12 +2,11 @@
   "name": "website",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "predeploy" : "npm run build",
     "deploy" : "gh-pages -d build",
     "dev": "parcel src/index.html --open",
-    "build": "parcel build"
+    "build": "parcel build src/index.html"
   },
   "keywords": [],
   "author": "",
