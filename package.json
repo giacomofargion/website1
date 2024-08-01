@@ -7,7 +7,7 @@
     "predeploy" : "npm run build",
     "deploy" : "gh-pages -d build",
     "dev": "parcel src/index.html --open",
-    "build": "parcel build src/index.html"
+    "build": "parcel build"
   },
   "keywords": [],
   "author": "",
