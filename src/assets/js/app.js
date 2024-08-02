@@ -99,18 +99,17 @@ projects.map((project, index) => {
   let num = index + 1;
   let template = `
     <div class="project">
-    <div class="project__header">
-      <span>${num}/5</span>
-      <span>${project.date}</span>
-    </div>
-    <div class="project__infos">
-      <h1 class="project__infos--name">${project.name}</h1>
-    </div>
-    <div class="project__img">
-      <img src="${project.image}.jpg" alt="">
-      <div class="project__links">
-        <a href="${project.link}" target="_blank">
-          <a href="${project.link}" target="_blank"class="coolCircleEyeButton">
+      <div class="project__header">
+        <span>${num}/5</span>
+        <span>${project.date}</span>
+      </div>
+      <div class="project__infos">
+        <h1 class="project__infos--name">${project.name}</h1>
+      </div>
+      <div class="project__img">
+        <img src="${project.image}" alt="${project.name}">
+        <div class="project__links">
+          <a href="${project.link}" target="_blank" class="coolCircleEyeButton">
             <svg class="textcircle" viewBox="0 0 500 500">
               <defs>
                 <path
@@ -131,7 +130,6 @@ projects.map((project, index) => {
             <svg
               class="eye"
               aria-hidden="true"
-              class="eye"
               viewBox="0 0 70 70"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -151,15 +149,13 @@ projects.map((project, index) => {
               <circle class="eye__inner" cx="35" cy="35.31" r="10.041" />
             </svg>
           </a>
-        </a>
-      </div>
-      <div class="project__description">
-        <p>${project.text}.</p>
+        </div>
+        <div class="project__description">
+          <p>${project.text}.</p>
+        </div>
       </div>
     </div>
-
-  </div>
-  `
+  `;
   project_container.innerHTML += template;
 });
 
