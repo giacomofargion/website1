@@ -60,28 +60,36 @@
 .coolCircleEyeButton {
   position: relative;
   display: inline-block;
+
   .textcircle {
     display: block;
     width: 205px;
-    text{
+
+    text {
       font-size: 32px;
       text-transform: uppercase;
       fill: black;
     }
   }
+
   @keyframes rotate {
-    to{
+    to {
       transform: rotate(-360deg);
     }
   }
-  &:hover {
-    text{
-    font-weight: 600;
-    }
-    animation: rotate 7s linear infinite;
 
+  &:hover {
+    .textcircle {
+      text {
+        & {
+          font-weight: 600;
+        }
+      }
+      animation: rotate 7s linear infinite;
+    }
   }
 }
+
 
 .eye {
   position: absolute;
