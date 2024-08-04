@@ -89,6 +89,7 @@ button.addEventListener('click', () => {
 
 links.forEach(link => {
   link.addEventListener('click', () => {
+    console.log(`Navigating to ${link.getAttribute('href')}`);
     menu.classList.remove('active');
   });
 });
