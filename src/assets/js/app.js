@@ -121,7 +121,7 @@ projects.map((project, index) => {
               <text>
                 <textPath
                   xlink:href="#textcircle"
-                  aria-label=".Listen here."
+                  aria-label="Listen here."
                   textLength="900"
                 >
                   .Listen here.
