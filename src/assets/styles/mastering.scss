@@ -8,6 +8,7 @@
   overflow: hidden;
   text-align: center;
   padding-top: 1rem;
+  z-index: 1;
   &__header {
     font-weight: 600;
     color: white;
@@ -20,8 +21,8 @@
     font-size: 30px;
     &--left {
       left: 0;
-      top: rem;
-      animation: moveleft 60s linear infinite;
+      top: 5rem;
+      animation: moveleft 40s linear infinite;
       @keyframes moveleft {
         0%{
           transform: translate3d(0, 0, 0);
@@ -34,7 +35,7 @@
     &--right {
       right: 0;
       top: 20rem;
-      animation: moveright 60s linear infinite;
+      animation: moveright 40s linear infinite;
       @keyframes moveright {
         0%{
           transform: translate3d(0, 0, 0);
@@ -44,8 +45,14 @@
         }
       }
     }
-
   }
+
+  .mastering__details {
+      color: white;
+      font-size: 25px;
+      padding-top: 5px;
+  }
+
   @media (max-width: 700px) {
     &{
       height: 400px;

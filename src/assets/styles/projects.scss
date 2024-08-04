@@ -101,9 +101,26 @@
     text-align: center; /* Centers the text */
   }
   .project__description p {
-    margin-top: 25px; /* Increase this value as needed */
+    margin-top: 45px; /* Increase this value as needed */
     width: 70vw;
     margin-left: auto; /* Centers the paragraph horizontally */
     margin-right: auto; /* Centers the paragraph horizontally */
+  }
+}
+
+//Hover effects removed for mobile
+@media (max-width: 768px) {
+  .coolCircleEyeButton {
+    .textcircle {
+      animation: rotate 7s linear infinite; /* Continuous rotation */
+    }
+
+    /* Remove hover effects on mobile */
+    &:hover {
+      .textcircle {
+        animation: none; /* Stop animation on hover for mobile */
+
+      }
+    }
   }
 }

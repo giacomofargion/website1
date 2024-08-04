@@ -2,34 +2,40 @@
 
 .fargions {
   margin-top: 150px;
-  // transition: background-color 0.5s;
   background-color: white;
+}
+
+.fargion-header {
+  margin-left: 20px;
 }
 
 h3 {
   white-space: nowrap;
 }
-
-// .item {
-//   @media (max-width: 600px) {
-//     padding: 5px 5px 5px 5px;
-//   }
-// }
-
 .text-container {
-  // border: 5px solid red;
   width: 500px;
-  //   @media (max-width: 600px) {
-  //   position: absolute;
-
-  // }
+  overflow-wrap: break-word;
 }
-
+.text-container-fargionsbio {
+  // width: 100%;
+  // width: 300px;
+  min-width: 250px;
+}
+// @media (max-width:500px) {
+//   .text-container-fargionsbio {
+//    width: 360px;
+//    margin-bottom: 100px;
+//  }
+//  @media (max-width:320px) {
+//   .text-container-fargionsbio {
+//     width: 250px;
+//   }
+//  }
+// }
 .text-container p {
   font-size: 15px;
   line-height: 2rem;
-  // max-width: 500px;
-  // white-space: nowrap;
+  word-wrap: break-word;
 }
 
 .item img {
@@ -71,6 +77,9 @@ section.horizontal .item {
     user-select: none;
     border-right: 1px solid rgba(0, 0, 0, 0.06);
     background-color: transparent;
+    @media (max-width:425px) {
+      padding: 50px;
+    }
 }
 
 section.horizontal .item:before {
@@ -90,4 +99,11 @@ section.horizontal .animation-wrap .item:nth-child(2n+2) {
 
 section.horizontal .animation-wrap .item:nth-child(4n+4) {
     align-items: flex-end;
+}
+
+
+@media (max-width:560px) {
+  #fargionbio {
+    overflow-wrap: break-word;
+  }
 }
