@@ -5,7 +5,6 @@
   height: 100vh;
   overflow: hidden;
   background: transparent;
-
   .header {
     position: absolute;
     top: 1rem;
@@ -15,9 +14,9 @@
 
     &__wrap {
       padding-top: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      // display: flex;
+      // align-items: center;
+      // justify-content: space-between;
       width: 60vw;
     }
 
@@ -35,7 +34,6 @@
     @media (max-width: 1200px) {
       &__wrap {
         width: 100vw;
-        // font-size: 0.8rem;
         }
       }
       @media (max-width: 500px) {
@@ -45,6 +43,7 @@
       }
     }
   }
+
 //ham nav
 .hamburger-nav {
   display: none;
@@ -104,16 +103,10 @@
   .header__left {
     display: none;
   }
-
-  .header__right {
-    display: none;
-  }
-
   .hamburger-nav {
     display: block;
   }
 }
-
 
 //Nav bar hover
 
@@ -337,7 +330,3 @@
     transform: translateY(20px) rotate(45deg);
   }
 }
-
-// .landing canvas {
-//   position: absolute;
-// }
